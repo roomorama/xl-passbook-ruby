@@ -1,4 +1,3 @@
-
 #  Copyright 2012 Xtreme Labs
 
 #  Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +18,7 @@
 require 'digest/sha1'
 require 'json'
 require 'openssl'
-require 'zip/zip'
+require 'zip'
 require 'zip/zipfilesystem'
 
 module Passbook
