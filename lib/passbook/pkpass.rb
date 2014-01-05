@@ -19,7 +19,6 @@ require 'digest/sha1'
 require 'json'
 require 'openssl'
 require 'zip'
-require 'zip/zipfilesystem'
 
 module Passbook
   # Pkpass is the class responsible for managing the contect of a pkpass and also signing the package
@@ -111,7 +110,7 @@ module Passbook
 
     # @private
     def compress_pass_file
-      stringio = Zip::ZipOutputStream::write_buffer do |z|
+      stringio = Zip::OutputStream::write_buffer do |z|
         self.files.each do |filename, content|
           z.put_next_entry filename
           z.print content
