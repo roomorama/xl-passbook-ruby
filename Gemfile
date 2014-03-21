@@ -1,7 +1,7 @@
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
 gemspec
-gem "rails", "3.2.3"
+gem 'rails', '~> 3.2'
 
 group :test do
   gem 'rake'

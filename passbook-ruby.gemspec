@@ -11,10 +11,9 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
   s.required_ruby_version = '>=1.9.0'
   s.rubyforge_project = 'passbook-ruby'
-  s.add_dependency "rails", ">= 3.1.0"
-  s.add_dependency "rubyzip"
-  s.add_dependency "json"
-  s.add_runtime_dependency "activesupport", ">= 3.0"
+  s.add_dependency 'rails', '>= 3.2.17'
+  s.add_dependency 'rubyzip'
+  s.add_dependency 'json'
+  s.add_runtime_dependency 'activesupport', '>= 3.2.17'
   s.add_development_dependency 'rspec', '>2.0'
-  s.add_development_dependency 'rake'
 end
