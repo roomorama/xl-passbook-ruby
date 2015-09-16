@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Passbook pkpass creation and management for Ruby projects"
   s.summary = s.description
   s.email = 'andrei.dinin@xtremelabs.com'
-  s.files = Dir.glob('{app,config,lib,spec}/**/*')+ %w(README.md LICENSE)
+  s.files = Dir.glob('{config,lib,spec}/**/*')+ %w(README.md LICENSE)
   s.homepage = 'https://github.com/xtremelabs/xl-passbook-ruby/'
   s.has_rdoc = false
   s.required_ruby_version = '>=1.9.0'
